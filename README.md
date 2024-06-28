@@ -1,4 +1,4 @@
-[![Actions Status](https://github.com/raku-community-modules/Slang-Roman/workflows/test/badge.svg)](https://github.com/raku-community-modules/Slang-Roman/actions)
+[![Actions Status](https://github.com/librasteve/Slang-Roman/workflows/test/badge.svg)](https://github.com/librasteve/Slang-Roman/actions)
 
 NAME
 ====
@@ -35,6 +35,15 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Roman_numerals), the stan
 </tr></thead>
 <tbody>
 <tr> <td>1</td> <td>M</td> <td>C</td> <td>X</td> <td>I</td> </tr> <tr> <td>2</td> <td>MM</td> <td>CC</td> <td>XX</td> <td>II</td> </tr> <tr> <td>3</td> <td>MMM</td> <td>CCC</td> <td>XXX</td> <td>III</td> </tr> <tr> <td>4</td> <td></td> <td>CD</td> <td>XL</td> <td>IV</td> </tr> <tr> <td>5</td> <td></td> <td>D</td> <td>L</td> <td>V</td> </tr> <tr> <td>6</td> <td></td> <td>DC</td> <td>LX</td> <td>VI</td> </tr> <tr> <td>7</td> <td></td> <td>DCC</td> <td>LXX</td> <td>VII</td> </tr> <tr> <td>8</td> <td></td> <td>DCCC</td> <td>LXXX</td> <td>VIII</td> </tr> <tr> <td>9</td> <td></td> <td>CM</td> <td>XC</td> <td>IX</td> </tr>
+</tbody>
+</table>
+
+<table class="pod-table">
+<thead><tr>
+<th>Parameter kind</th> <th>Example</th> <th>Comment</th> <th>Check for no arg passed</th>
+</tr></thead>
+<tbody>
+<tr> <td>L&lt;Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters&gt;</td> <td>C&lt;*@array&gt;</td> <td>Don&#39;t check using C&lt;.defined&gt;</td> <td>C&lt;if not @array&gt;</td> </tr> <tr> <td>Required</td> <td>C&lt;$foo&gt;</td> <td>Can&#39;t be omitted</td> <td>(not applicable)</td> </tr> <tr> <td>Optional</td> <td>C&lt;@bar = default&gt;</td> <td>Pick, and check, a suitable default N&lt;A suitable default is an Object that has a distinct identity,</td> <td></td> </tr> <tr> <td>as may be checked by the L&lt;C&lt;WHICH&gt;|https://docs.raku.org/type/Mu#method_WHICH&gt; method.&gt;</td> <td>C&lt;if @bar === default {...}&gt;</td> <td></td> <td></td> </tr>
 </tbody>
 </table>
 
