@@ -165,6 +165,15 @@ According to L<Wikipedia|https://en.wikipedia.org/wiki/Roman_numerals>, the stan
 | 9 |           | CM       | XC   | IX    |
 =end table
 
+=begin table
+ Parameter kind | Example | Comment | Check for no arg passed
+ ===============|=============================================
+ L<Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters> | C<*@array> | Don't check using C<.defined> | C<if not @array>
+ Required | C<$foo> | Can't be omitted | (not applicable)
+ Optional | C<@bar = default> | Pick, and check, a suitable default N<A suitable default is an Object that has a distinct identity, 
+as may be checked by the L<C<WHICH>|https://docs.raku.org/type/Mu#method_WHICH> method.> | C<if @bar === default {...}>
+=end table
+
 The numerals for 4 (IV) and 9 (IX) are written using subtractive notation,where the smaller symbol (I) is subtracted from the larger one (V, or X), thus avoiding the clumsier IIII and VIIII. Subtractive notation is also used for 40 (XL), 90 (XC), 400 (CD) and 900 (CM). These are the only subtractive forms in standard use.
 
 =head1 AUTHOR
