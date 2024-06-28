@@ -38,33 +38,16 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Roman_numerals), the stan
 </tbody>
 </table>
 
-[Slurpy](https://docs.raku.org/language/signatures#Slurpy_parameters) `*@array` `if not @array`
-
-    Required  C<$foo> 
-
-    Optional C<@bar = default>
-
-default A suitable default is an Object that has a distinct identity, as may be checked by the [`WHICH`](https://docs.raku.org/type/Mu#method_WHICH) method.
-
-`if @bar === default {...}`
-
 <table class="pod-table">
 <thead><tr>
 <th>Parameter kind</th> <th>Example</th> <th>Comment</th> <th>Check for no arg passed</th>
 </tr></thead>
 <tbody>
-<tr> <td>Required</td> <td>C&lt;$foo&gt;</td> <td>Can&#39;t be omitted</td> <td>(not applicable)</td> </tr>
+<tr> <td>Slurpy</td> <td>*@array</td> <td>Don&#39;t check using .defined</td> <td>if not @array</td> </tr> <tr> <td>Required</td> <td>$foo</td> <td>Can&#39;t be omitted</td> <td>(not applicable)</td> </tr> <tr> <td>Optional</td> <td>@bar = default</td> <td>Pick a suitable default¹</td> <td>if @bar =:= default</td> </tr>
 </tbody>
 </table>
 
-<table class="pod-table">
-<thead><tr>
-<th>Parameter kind</th> <th>Example</th> <th>Comment</th> <th>Check for no arg passed</th>
-</tr></thead>
-<tbody>
-<tr> <td>L&lt;Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters&gt;</td> <td>C&lt;*@array&gt;</td> <td>Don&#39;t check using C&lt;.defined&gt;</td> <td>C&lt;if not @array&gt;</td> </tr> <tr> <td>Required</td> <td>C&lt;$foo&gt;</td> <td>Can&#39;t be omitted</td> <td>(not applicable)</td> </tr> <tr> <td>Optional</td> <td>C&lt;@bar = default&gt;</td> <td>Pick, and check, a suitable default N&lt;A suitable default is an Object that has a distinct identity,</td> <td></td> </tr> <tr> <td>as may be checked by the L&lt;C&lt;WHICH&gt;|https://docs.raku.org/type/Mu#method_WHICH&gt; method.&gt;</td> <td>C&lt;if @bar === default {...}&gt;</td> <td></td> <td></td> </tr>
-</tbody>
-</table>
+¹ A suitable default is an Object that has a distinct identity, as may be checked by the [`WHICH`](https://docs.raku.org/type/Mu#method_WHICH) method.> 
 
 The numerals for 4 (IV) and 9 (IX) are written using subtractive notation,where the smaller symbol (I) is subtracted from the larger one (V, or X), thus avoiding the clumsier IIII and VIIII. Subtractive notation is also used for 40 (XL), 90 (XC), 400 (CD) and 900 (CM). These are the only subtractive forms in standard use.
 
