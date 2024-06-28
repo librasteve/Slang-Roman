@@ -53,7 +53,7 @@ default A suitable default is an Object that has a distinct identity, as may be 
 <th>Parameter kind</th> <th>Example</th> <th>Comment</th> <th>Check for no arg passed</th>
 </tr></thead>
 <tbody>
-<tr> <td>L&lt;Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters&gt;</td> <td>C&lt;*@array&gt;</td> <td>Don&#39;t check using C&lt;.defined&gt;</td> <td>C&lt;if not @array&gt;</td> </tr> <tr> <td>Required</td> <td>C&lt;$foo&gt;</td> <td>Can&#39;t be omitted</td> <td>(not applicable)</td> </tr> <tr> <td>Optional</td> <td>C&lt;@bar = default&gt;</td> <td>Pick, and check, a suitable default N&lt;A suitable default is an Object that has a distinct identity,</td> <td></td> </tr> <tr> <td>as may be checked by the L&lt;C&lt;WHICH&gt;|https://docs.raku.org/type/Mu#method_WHICH&gt; method.&gt;</td> <td>C&lt;if @bar === default {...}&gt;</td> <td></td> <td></td> </tr>
+<tr> <td>L&lt;Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters&gt;</td> <td></td> <td></td> <td></td> </tr> <tr> <td>| C&lt;*@array&gt;</td> <td></td> <td></td> <td></td> </tr> <tr> <td>| Don&#39;t check using C&lt;.defined&gt;</td> <td></td> <td></td> <td></td> </tr> <tr> <td>| C&lt;if not @array&gt;</td> <td></td> <td></td> <td></td> </tr> <tr> <td>Required</td> <td>C&lt;$foo&gt;</td> <td>Can&#39;t be omitted</td> <td>(not applicable)</td> </tr> <tr> <td>Optional</td> <td>C&lt;@bar = default&gt;</td> <td>Pick, and check, a suitable default N&lt;A suitable default is an Object that has a distinct identity,</td> <td></td> </tr> <tr> <td>as may be checked by the L&lt;C&lt;WHICH&gt;|https://docs.raku.org/type/Mu#method_WHICH&gt; method.&gt;</td> <td>C&lt;if @bar === default {...}&gt;</td> <td></td> <td></td> </tr>
 </tbody>
 </table>
 
