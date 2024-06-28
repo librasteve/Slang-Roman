@@ -38,6 +38,16 @@ According to [Wikipedia](https://en.wikipedia.org/wiki/Roman_numerals), the stan
 </tbody>
 </table>
 
+[Slurpy](https://docs.raku.org/language/signatures#Slurpy_parameters) `*@array` `if not @array`
+
+    Required  C<$foo> 
+
+    Optional C<@bar = default>
+
+default A suitable default is an Object that has a distinct identity, as may be checked by the [`WHICH`](https://docs.raku.org/type/Mu#method_WHICH) method.
+
+`if @bar === default {...}`
+
 <table class="pod-table">
 <thead><tr>
 <th>Parameter kind</th> <th>Example</th> <th>Comment</th> <th>Check for no arg passed</th>
