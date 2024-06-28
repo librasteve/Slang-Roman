@@ -165,6 +165,19 @@ According to L<Wikipedia|https://en.wikipedia.org/wiki/Roman_numerals>, the stan
 | 9 |           | CM       | XC   | IX    |
 =end table
 
+L<Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters>
+C<*@array> 
+C<if not @array>
+
+ Required  C<$foo> 
+
+ Optional C<@bar = default>
+default N<A suitable default is an Object that has a distinct identity, 
+as may be checked by the 
+L<C<WHICH>|https://docs.raku.org/type/Mu#method_WHICH> method.>
+
+C<if @bar === default {...}>
+
 =begin table
  Parameter kind | Example | Comment | Check for no arg passed
  ===============|=============================================
