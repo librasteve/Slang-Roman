@@ -181,7 +181,10 @@ C<if @bar === default {...}>
 =begin table
  Parameter kind | Example | Comment | Check for no arg passed
  ===============|=============================================
- L<Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters> | C<*@array> | Don't check using C<.defined> | C<if not @array>
+ L<Slurpy|https://docs.raku.org/language/signatures#Slurpy_parameters> 
+| C<*@array> 
+| Don't check using C<.defined> 
+| C<if not @array>
  Required | C<$foo> | Can't be omitted | (not applicable)
  Optional | C<@bar = default> | Pick, and check, a suitable default N<A suitable default is an Object that has a distinct identity, 
 as may be checked by the L<C<WHICH>|https://docs.raku.org/type/Mu#method_WHICH> method.> | C<if @bar === default {...}>
